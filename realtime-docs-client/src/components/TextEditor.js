@@ -11,7 +11,7 @@ export default function TextEditor({ documentId }) {
 
   // 1. CONNECT TO SOCKET.IO
   useEffect(() => {
-    const s = io("http://localhost:8080"); 
+    const s = io("https://realtime-docs-backend.onrender.com"); 
     setSocket(s);
 
     return () => {
